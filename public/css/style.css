@@ -1,0 +1,340 @@
+@charset "UTF-8";
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: geometricPrecision;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don’t have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01s !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* @link https://utopia.fyi/type/calculator?c=320,17,1.2,1140,22,1.25,9,3,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+:root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1140;
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+}
+
+@media screen and (min-width: 1140px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+:root {
+  --f--3-min: 10.42;
+  --f--3-max: 11.26;
+  --step--3: calc(
+    ((var(--f--3-min) / 16) * 1rem) + (var(--f--3-max) - var(--f--3-min)) *
+      var(--fluid-bp)
+  );
+  --f--2-min: 12.5;
+  --f--2-max: 14.08;
+  --step--2: calc(
+    ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
+      var(--fluid-bp)
+  );
+  --f--1-min: 15;
+  --f--1-max: 17.6;
+  --step--1: calc(
+    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+      var(--fluid-bp)
+  );
+  --f-0-min: 18;
+  --f-0-max: 22;
+  --step-0: calc(
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+      var(--fluid-bp)
+  );
+  --f-1-min: 21.6;
+  --f-1-max: 27.5;
+  --step-1: calc(
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+      var(--fluid-bp)
+  );
+  --f-2-min: 25.92;
+  --f-2-max: 34.38;
+  --step-2: calc(
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+      var(--fluid-bp)
+  );
+  --f-3-min: 31.1;
+  --f-3-max: 42.97;
+  --step-3: calc(
+    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
+  );
+  --f-4-min: 37.32;
+  --f-4-max: 53.71;
+  --step-4: calc(
+    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+      var(--fluid-bp)
+  );
+  --f-5-min: 44.79;
+  --f-5-max: 67.14;
+  --step-5: calc(
+    ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+      var(--fluid-bp)
+  );
+  --f-6-min: 53.75;
+  --f-6-max: 83.92;
+  --step-6: calc(
+    ((var(--f-6-min) / 16) * 1rem) + (var(--f-6-max) - var(--f-6-min)) *
+      var(--fluid-bp)
+  );
+  --f-7-min: 64.5;
+  --f-7-max: 104.9;
+  --step-7: calc(
+    ((var(--f-7-min) / 16) * 1rem) + (var(--f-7-max) - var(--f-7-min)) *
+      var(--fluid-bp)
+  );
+  --f-8-min: 77.4;
+  --f-8-max: 131.13;
+  --step-8: calc(
+    ((var(--f-8-min) / 16) * 1rem) + (var(--f-8-max) - var(--f-8-min)) *
+      var(--fluid-bp)
+  );
+  --f-9-min: 92.88;
+  --f-9-max: 163.91;
+  --step-9: calc(
+    ((var(--f-9-min) / 16) * 1rem) + (var(--f-9-max) - var(--f-9-min)) *
+      var(--fluid-bp)
+  );
+}
+
+:root {
+  --water100: hsl(200, 100%, 96%);
+  --water200: hsl(200, 81%, 90%);
+  --water300: hsl(200, 75%, 83%);
+  --water400: hsl(206, 68%, 68%);
+  --water500: hsl(209, 68%, 59%);
+  --water600: hsl(206, 80%, 43%);
+  --water700: hsl(209, 68%, 37%);
+  --water800: hsl(209, 70%, 29%);
+  --water900: hsl(210, 72%, 23%);
+  --grape100: hsl(334, 100%, 96%);
+  --grape200: hsl(334, 100%, 90%);
+  --grape300: hsl(334, 100%, 68%);
+  --grape400: hsl(334, 100%, 60%);
+  --grape500: hsl(334, 100%, 52%);
+  --grape600: hsl(334, 100%, 44%);
+  --grape700: hsl(334, 100%, 36%);
+  --grape800: hsl(334, 100%, 24%);
+  --mint100: hsl(170, 50%, 95%);
+  --mint200: hsl(168, 68%, 90%);
+  --mint300: hsl(169, 58%, 83%);
+  --mint400: hsl(169, 62%, 73%);
+  --mint500: hsl(176, 71%, 49%);
+  --mint600: hsl(174, 73%, 44%);
+  --mint700: hsl(174, 79%, 36%);
+  --mint800: hsl(178, 94%, 27%);
+  --mint900: hsl(180, 96%, 19%);
+  --leaf50: hsl(114, 45%, 96%);
+  --leaf100: hsl(117, 38%, 89%);
+  --leaf200: hsl(116, 35%, 75%);
+  --leaf300: hsl(116, 32%, 61%);
+  --leaf400: hsl(116, 35%, 49%);
+  --leaf500: hsl(116, 48%, 41%);
+  --leaf600: hsl(116, 46%, 38%);
+  --leaf700: hsl(115, 47%, 33%);
+  --leaf800: hsl(116, 48%, 29%);
+  --leaf900: hsl(116, 52%, 24%);
+  --leaf1000: hsl(116, 52%, 12%);
+  --lemonade100: hsl(36, 100%, 97%);
+  --lemonade200: hsl(37, 100%, 92%);
+  --lemonade300: hsl(37, 100%, 92%);
+  --lemonade400: hsl(40, 100%, 76%);
+  --lemonade500: hsl(42, 100%, 64%);
+  --lemonade600: hsl(43, 91%, 52%);
+  --lemonade700: hsl(43, 85%, 44%);
+  --lemonade800: hsl(43, 85%, 36%);
+  --lemonade900: hsl(43, 85%, 21%);
+  --berry100: hsl(0, 100%, 98%);
+  --berry200: hsl(0, 100%, 93%);
+  --berry300: hsl(0, 100%, 88%);
+  --berry400: hsl(0, 87%, 76%);
+  --berry500: hsl(0, 83%, 61%);
+  --berry600: hsl(0, 57%, 51%);
+  --berry700: hsl(0, 55%, 45%);
+  --berry800: hsl(0, 55%, 39%);
+  --berry900: hsl(355, 53%, 29%);
+  --berry1000: hsl(355, 53%, 19%);
+  --salt100: hsl(0, 0%, 100%);
+  --salt150: hsl(0, 0%, 97%);
+  --salt200: hsl(240, 4%, 95%);
+  --salt300: hsl(240, 4%, 91%);
+  --salt400: hsl(220, 4%, 84%);
+  --salt500: hsl(225, 3%, 77%);
+  --salt600: hsl(231, 4%, 66%);
+  --salt700: hsl(227, 4%, 55%);
+  --salt800: hsl(229, 5%, 43%);
+  --salt900: hsl(230, 3%, 34%);
+  --salt1000: hsl(230, 5%, 24%);
+  --salt1100: hsl(240, 2%, 18%);
+  --salt1200: hsl(240, 3%, 14%);
+  --salt1300: hsl(0, 0%, 0%);
+  /* Default mode */
+  --primaryDarker: var(--grape700);
+  --primary: var(--grape500);
+  --primaryLighter: var(--grape300);
+  --grey7: var(--salt700);
+  --grey6: var(--salt600);
+  --grey5: var(--salt500);
+  --grey4: var(--salt400);
+  --grey3: var(--salt300);
+  --grey2: var(--salt200);
+  --grey: var(--salt100);
+  --textPrimary: var(--salt1000);
+  --textSecondary: hsla(230, 3%, 7%, 60%);
+  --textTertiary: hsla(230, 3%, 34%, 30%);
+  --bgZ0: var(--salt300);
+  --bgZ1: var(--salt100);
+  --bgZ2: var(--salt100);
+  --negative_bg: var(--berry300);
+  --negative_border: var(--berry500);
+  --negative_primaryText: var(--berry800);
+  --attention_bg: var(--lemonade300);
+  --attention_border: var(--lemonade500);
+  --attention_primaryText: var(--lemonade900);
+  --positive_bg: var(--leaf200);
+  --positive_border: var(--leaf500);
+  --positive_primaryText: var(--leaf900);
+  --information_bg: var(--mint200);
+  --information_border: var(--mint500);
+  --information_primaryText: var(--mint900);
+  --neutral_bg: var(--salt200);
+  --neutral_border: var(--salt500);
+  --neutral_primaryText: var(--salt900);
+  --focus: var(--water100);
+  --focus_border: var(--water500);
+  --focus_negative: var(--berry100);
+  --input_bg: rgba(118, 118, 128, 0.08);
+  --primaryButton_bg: var(--grape500);
+  --primaryButton_text: var(--salt100);
+  --primaryButton_border: var(--grape500);
+  --secondaryButton_bg: transparent;
+  --secondaryButton_text: var(--grape500);
+  --secondaryButton_border: var(--grape500);
+  --destructiveButton_bg: var(--berry800);
+  --destructiveButton_text: var(--berry100);
+  --destructiveButton_border: var(--berry500);
+  --borderPrimary: var(--salt500);
+  --borderSecondary: hsla(230, 5%, 24%, 30%);
+}
+
+/* Dark mode */
+:root {
+  --ff-sans: Helvetica, sans-serif;
+}
+
+body {
+  font-size: var(--step-0);
+  line-height: 1.5;
+  font-family: var(--ff-sans);
+  font-weight: 500;
+  color: var(--textPrimary);
+}
+
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-weight: bold;
+}
+
+h1,
+.h1 {
+  font-size: var(--step-6);
+}
+
+h2,
+.h2 {
+  font-size: var(--step-5);
+}
+
+h3,
+.h3 {
+  font-size: var(--step-4);
+}
+
+h4,
+.h4 {
+  font-size: var(--step-2);
+}
+
+body {
+  background-color: var(--bgZ0);
+}
