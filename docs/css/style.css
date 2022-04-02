@@ -169,129 +169,21 @@ select {
     ((var(--f-9-min) / 16) * 1rem) + (var(--f-9-max) - var(--f-9-min)) *
       var(--fluid-bp)
   );
+  --fs-100: var(--step--1);
+  --fs-200: var(--step--2);
+  --fs-300: var(--step--1);
+  --fs-400: var(--step-0);
+  --fs-500: var(--step-1);
+  --fs-600: var(--step-2);
+  --fs-700: var(--step-3);
+  --fs-800: var(--step-4);
+  --fs-9000: var(--step-5);
+  --fs-1000: var(--step-6);
+  --fs-1100: var(--step-7);
+  --fs-1200: var(--step-8);
+  --fs-1300: var(--step-9);
 }
 
-:root {
-  --water100: hsl(200, 100%, 96%);
-  --water200: hsl(200, 81%, 90%);
-  --water300: hsl(200, 75%, 83%);
-  --water400: hsl(206, 68%, 68%);
-  --water500: hsl(209, 68%, 59%);
-  --water600: hsl(206, 80%, 43%);
-  --water700: hsl(209, 68%, 37%);
-  --water800: hsl(209, 70%, 29%);
-  --water900: hsl(210, 72%, 23%);
-  --grape100: hsl(334, 100%, 96%);
-  --grape200: hsl(334, 100%, 90%);
-  --grape300: hsl(334, 100%, 68%);
-  --grape400: hsl(334, 100%, 60%);
-  --grape500: hsl(334, 100%, 52%);
-  --grape600: hsl(334, 100%, 44%);
-  --grape700: hsl(334, 100%, 36%);
-  --grape800: hsl(334, 100%, 24%);
-  --mint100: hsl(170, 50%, 95%);
-  --mint200: hsl(168, 68%, 90%);
-  --mint300: hsl(169, 58%, 83%);
-  --mint400: hsl(169, 62%, 73%);
-  --mint500: hsl(176, 71%, 49%);
-  --mint600: hsl(174, 73%, 44%);
-  --mint700: hsl(174, 79%, 36%);
-  --mint800: hsl(178, 94%, 27%);
-  --mint900: hsl(180, 96%, 19%);
-  --leaf50: hsl(114, 45%, 96%);
-  --leaf100: hsl(117, 38%, 89%);
-  --leaf200: hsl(116, 35%, 75%);
-  --leaf300: hsl(116, 32%, 61%);
-  --leaf400: hsl(116, 35%, 49%);
-  --leaf500: hsl(116, 48%, 41%);
-  --leaf600: hsl(116, 46%, 38%);
-  --leaf700: hsl(115, 47%, 33%);
-  --leaf800: hsl(116, 48%, 29%);
-  --leaf900: hsl(116, 52%, 24%);
-  --leaf1000: hsl(116, 52%, 12%);
-  --lemonade100: hsl(36, 100%, 97%);
-  --lemonade200: hsl(37, 100%, 92%);
-  --lemonade300: hsl(37, 100%, 92%);
-  --lemonade400: hsl(40, 100%, 76%);
-  --lemonade500: hsl(42, 100%, 64%);
-  --lemonade600: hsl(43, 91%, 52%);
-  --lemonade700: hsl(43, 85%, 44%);
-  --lemonade800: hsl(43, 85%, 36%);
-  --lemonade900: hsl(43, 85%, 21%);
-  --berry100: hsl(0, 100%, 98%);
-  --berry200: hsl(0, 100%, 93%);
-  --berry300: hsl(0, 100%, 88%);
-  --berry400: hsl(0, 87%, 76%);
-  --berry500: hsl(0, 83%, 61%);
-  --berry600: hsl(0, 57%, 51%);
-  --berry700: hsl(0, 55%, 45%);
-  --berry800: hsl(0, 55%, 39%);
-  --berry900: hsl(355, 53%, 29%);
-  --berry1000: hsl(355, 53%, 19%);
-  --salt100: hsl(0, 0%, 100%);
-  --salt150: hsl(0, 0%, 97%);
-  --salt200: hsl(240, 4%, 95%);
-  --salt300: hsl(240, 4%, 91%);
-  --salt400: hsl(220, 4%, 84%);
-  --salt500: hsl(225, 3%, 77%);
-  --salt600: hsl(231, 4%, 66%);
-  --salt700: hsl(227, 4%, 55%);
-  --salt800: hsl(229, 5%, 43%);
-  --salt900: hsl(230, 3%, 34%);
-  --salt1000: hsl(230, 5%, 24%);
-  --salt1100: hsl(240, 2%, 18%);
-  --salt1200: hsl(240, 3%, 14%);
-  --salt1300: hsl(0, 0%, 0%);
-  /* Default mode */
-  --primaryDarker: var(--grape700);
-  --primary: var(--grape500);
-  --primaryLighter: var(--grape300);
-  --grey7: var(--salt700);
-  --grey6: var(--salt600);
-  --grey5: var(--salt500);
-  --grey4: var(--salt400);
-  --grey3: var(--salt300);
-  --grey2: var(--salt200);
-  --grey: var(--salt100);
-  --textPrimary: var(--salt1000);
-  --textSecondary: hsla(230, 3%, 7%, 60%);
-  --textTertiary: hsla(230, 3%, 34%, 30%);
-  --bgZ0: var(--salt300);
-  --bgZ1: var(--salt100);
-  --bgZ2: var(--salt100);
-  --negative_bg: var(--berry300);
-  --negative_border: var(--berry500);
-  --negative_primaryText: var(--berry800);
-  --attention_bg: var(--lemonade300);
-  --attention_border: var(--lemonade500);
-  --attention_primaryText: var(--lemonade900);
-  --positive_bg: var(--leaf200);
-  --positive_border: var(--leaf500);
-  --positive_primaryText: var(--leaf900);
-  --information_bg: var(--mint200);
-  --information_border: var(--mint500);
-  --information_primaryText: var(--mint900);
-  --neutral_bg: var(--salt200);
-  --neutral_border: var(--salt500);
-  --neutral_primaryText: var(--salt900);
-  --focus: var(--water100);
-  --focus_border: var(--water500);
-  --focus_negative: var(--berry100);
-  --input_bg: rgba(118, 118, 128, 0.08);
-  --primaryButton_bg: var(--grape500);
-  --primaryButton_text: var(--salt100);
-  --primaryButton_border: var(--grape500);
-  --secondaryButton_bg: transparent;
-  --secondaryButton_text: var(--grape500);
-  --secondaryButton_border: var(--grape500);
-  --destructiveButton_bg: var(--berry800);
-  --destructiveButton_text: var(--berry100);
-  --destructiveButton_border: var(--berry500);
-  --borderPrimary: var(--salt500);
-  --borderSecondary: hsla(230, 5%, 24%, 30%);
-}
-
-/* Dark mode */
 :root {
   --ff-sans: Helvetica, sans-serif;
 }
@@ -301,7 +193,7 @@ body {
   line-height: 1.5;
   font-family: var(--ff-sans);
   font-weight: 500;
-  color: var(--textPrimary);
+  color: var(--color-primaryText);
 }
 
 h1,
@@ -335,6 +227,1225 @@ h4,
   font-size: var(--step-2);
 }
 
+:root {
+  --fw-regular: 500;
+  --fw-bold: 700;
+}
+
+:root {
+  --color-primaryText: #2d2d2f;
+  --color-z0: #e7e7e9;
+}
+
+/* GORKO: auto-generated utility classes start */
+.bg-water100 {
+  background: #ebf8ff;
+}
+
+.bg-water200 {
+  background: #d1ecfa;
+}
+
+.bg-water300 {
+  background: #b3def4;
+}
+
+.bg-water400 {
+  background: #76b5e5;
+}
+
+.bg-water500 {
+  background: #4f99de;
+}
+
+.bg-water600 {
+  background: #1679c5;
+}
+
+.bg-water700 {
+  background: #1e609f;
+}
+
+.bg-water800 {
+  background: #164c7e;
+}
+
+.bg-water900 {
+  background: #103b65;
+}
+
+.bg-grape100 {
+  background: #ffebf3;
+}
+
+.bg-grape200 {
+  background: #ffcce2;
+}
+
+.bg-grape300 {
+  background: #ff5ca3;
+}
+
+.bg-grape400 {
+  background: #ff338b;
+}
+
+.bg-grape500 {
+  background: #ff0a74;
+}
+
+.bg-grape600 {
+  background: #e00061;
+}
+
+.bg-grape700 {
+  background: #b80050;
+}
+
+.bg-grape800 {
+  background: #7a0035;
+}
+
+.bg-mint100 {
+  background: #ecf9f7;
+}
+
+.bg-mint200 {
+  background: #d4f7f0;
+}
+
+.bg-mint300 {
+  background: #bbede4;
+}
+
+.bg-mint400 {
+  background: #8fe5d5;
+}
+
+.bg-mint500 {
+  background: #24d6ca;
+}
+
+.bg-mint600 {
+  background: #1ec2b2;
+}
+
+.bg-mint700 {
+  background: #13a496;
+}
+
+.bg-mint800 {
+  background: #048681;
+}
+
+.bg-mint900 {
+  background: #025f5f;
+}
+
+.bg-leaf50 {
+  background: #f1f9f0;
+}
+
+.bg-leaf100 {
+  background: #d9eed8;
+}
+
+.bg-leaf200 {
+  background: #acd6a9;
+}
+
+.bg-leaf300 {
+  background: #80bb7c;
+}
+
+.bg-leaf400 {
+  background: #57a951;
+}
+
+.bg-leaf500 {
+  background: #3d9b36;
+}
+
+.bg-leaf600 {
+  background: #3a8d34;
+}
+
+.bg-leaf700 {
+  background: #337c2d;
+}
+
+.bg-leaf800 {
+  background: #2b6d26;
+}
+
+.bg-leaf900 {
+  background: #225d1d;
+}
+
+.bg-leaf1000 {
+  background: #112f0f;
+}
+
+.bg-lemonade100 {
+  background: #fff9f0;
+}
+
+.bg-lemonade200 {
+  background: #ffefd6;
+}
+
+.bg-lemonade300 {
+  background: #ffefd6;
+}
+
+.bg-lemonade400 {
+  background: #ffd685;
+}
+
+.bg-lemonade500 {
+  background: #ffc847;
+}
+
+.bg-lemonade600 {
+  background: #f4b515;
+}
+
+.bg-lemonade700 {
+  background: #d09a11;
+}
+
+.bg-lemonade800 {
+  background: #aa7e0e;
+}
+
+.bg-lemonade900 {
+  background: #634908;
+}
+
+.bg-berry100 {
+  background: #fff5f5;
+}
+
+.bg-berry200 {
+  background: #ffdbdb;
+}
+
+.bg-berry300 {
+  background: #ffc2c2;
+}
+
+.bg-berry400 {
+  background: #f78d8d;
+}
+
+.bg-berry500 {
+  background: #ee4949;
+}
+
+.bg-berry600 {
+  background: #c93b3b;
+}
+
+.bg-berry700 {
+  background: #b23434;
+}
+
+.bg-berry800 {
+  background: #9a2d2d;
+}
+
+.bg-berry900 {
+  background: #712329;
+}
+
+.bg-berry1000 {
+  background: #4a171b;
+}
+
+.bg-salt100 {
+  background: white;
+}
+
+.bg-salt150 {
+  background: #f7f7f7;
+}
+
+.bg-salt200 {
+  background: #f2f2f3;
+}
+
+.bg-salt300 {
+  background: #e7e7e9;
+}
+
+.bg-salt400 {
+  background: #d5d6d8;
+}
+
+.bg-salt500 {
+  background: #c3c3c6;
+}
+
+.bg-salt600 {
+  background: #a5a6ac;
+}
+
+.bg-salt700 {
+  background: #888a91;
+}
+
+.bg-salt800 {
+  background: #686a73;
+}
+
+.bg-salt900 {
+  background: #545559;
+}
+
+.bg-salt1000 {
+  background: #3a3b40;
+}
+
+.bg-salt1100 {
+  background: #2d2d2f;
+}
+
+.bg-salt1200 {
+  background: #232325;
+}
+
+.bg-salt1300 {
+  background: black;
+}
+
+.color-water100 {
+  color: #ebf8ff;
+}
+
+.color-water200 {
+  color: #d1ecfa;
+}
+
+.color-water300 {
+  color: #b3def4;
+}
+
+.color-water400 {
+  color: #76b5e5;
+}
+
+.color-water500 {
+  color: #4f99de;
+}
+
+.color-water600 {
+  color: #1679c5;
+}
+
+.color-water700 {
+  color: #1e609f;
+}
+
+.color-water800 {
+  color: #164c7e;
+}
+
+.color-water900 {
+  color: #103b65;
+}
+
+.color-grape100 {
+  color: #ffebf3;
+}
+
+.color-grape200 {
+  color: #ffcce2;
+}
+
+.color-grape300 {
+  color: #ff5ca3;
+}
+
+.color-grape400 {
+  color: #ff338b;
+}
+
+.color-grape500 {
+  color: #ff0a74;
+}
+
+.color-grape600 {
+  color: #e00061;
+}
+
+.color-grape700 {
+  color: #b80050;
+}
+
+.color-grape800 {
+  color: #7a0035;
+}
+
+.color-mint100 {
+  color: #ecf9f7;
+}
+
+.color-mint200 {
+  color: #d4f7f0;
+}
+
+.color-mint300 {
+  color: #bbede4;
+}
+
+.color-mint400 {
+  color: #8fe5d5;
+}
+
+.color-mint500 {
+  color: #24d6ca;
+}
+
+.color-mint600 {
+  color: #1ec2b2;
+}
+
+.color-mint700 {
+  color: #13a496;
+}
+
+.color-mint800 {
+  color: #048681;
+}
+
+.color-mint900 {
+  color: #025f5f;
+}
+
+.color-leaf50 {
+  color: #f1f9f0;
+}
+
+.color-leaf100 {
+  color: #d9eed8;
+}
+
+.color-leaf200 {
+  color: #acd6a9;
+}
+
+.color-leaf300 {
+  color: #80bb7c;
+}
+
+.color-leaf400 {
+  color: #57a951;
+}
+
+.color-leaf500 {
+  color: #3d9b36;
+}
+
+.color-leaf600 {
+  color: #3a8d34;
+}
+
+.color-leaf700 {
+  color: #337c2d;
+}
+
+.color-leaf800 {
+  color: #2b6d26;
+}
+
+.color-leaf900 {
+  color: #225d1d;
+}
+
+.color-leaf1000 {
+  color: #112f0f;
+}
+
+.color-lemonade100 {
+  color: #fff9f0;
+}
+
+.color-lemonade200 {
+  color: #ffefd6;
+}
+
+.color-lemonade300 {
+  color: #ffefd6;
+}
+
+.color-lemonade400 {
+  color: #ffd685;
+}
+
+.color-lemonade500 {
+  color: #ffc847;
+}
+
+.color-lemonade600 {
+  color: #f4b515;
+}
+
+.color-lemonade700 {
+  color: #d09a11;
+}
+
+.color-lemonade800 {
+  color: #aa7e0e;
+}
+
+.color-lemonade900 {
+  color: #634908;
+}
+
+.color-berry100 {
+  color: #fff5f5;
+}
+
+.color-berry200 {
+  color: #ffdbdb;
+}
+
+.color-berry300 {
+  color: #ffc2c2;
+}
+
+.color-berry400 {
+  color: #f78d8d;
+}
+
+.color-berry500 {
+  color: #ee4949;
+}
+
+.color-berry600 {
+  color: #c93b3b;
+}
+
+.color-berry700 {
+  color: #b23434;
+}
+
+.color-berry800 {
+  color: #9a2d2d;
+}
+
+.color-berry900 {
+  color: #712329;
+}
+
+.color-berry1000 {
+  color: #4a171b;
+}
+
+.color-salt100 {
+  color: white;
+}
+
+.color-salt150 {
+  color: #f7f7f7;
+}
+
+.color-salt200 {
+  color: #f2f2f3;
+}
+
+.color-salt300 {
+  color: #e7e7e9;
+}
+
+.color-salt400 {
+  color: #d5d6d8;
+}
+
+.color-salt500 {
+  color: #c3c3c6;
+}
+
+.color-salt600 {
+  color: #a5a6ac;
+}
+
+.color-salt700 {
+  color: #888a91;
+}
+
+.color-salt800 {
+  color: #686a73;
+}
+
+.color-salt900 {
+  color: #545559;
+}
+
+.color-salt1000 {
+  color: #3a3b40;
+}
+
+.color-salt1100 {
+  color: #2d2d2f;
+}
+
+.color-salt1200 {
+  color: #232325;
+}
+
+.color-salt1300 {
+  color: black;
+}
+
+.box-block {
+  display: block;
+}
+
+.box-flex {
+  display: flex;
+}
+
+.box-hide {
+  display: none;
+}
+
+.box-show {
+  display: inherit;
+}
+
+.font-base {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.gap-top-300 {
+  margin-top: var(--fs-300);
+}
+
+.gap-top-400 {
+  margin-top: var(--fs-400);
+}
+
+.gap-top-500 {
+  margin-top: var(--fs-500);
+}
+
+.gap-top-600 {
+  margin-top: var(--fs-600);
+}
+
+.gap-top-700 {
+  margin-top: var(--fs-700);
+}
+
+.gap-top-800 {
+  margin-top: var(--fs-800);
+}
+
+.gap-top-900 {
+  margin-top: var(--fs-900);
+}
+
+.gap-top-1000 {
+  margin-top: var(--fs-1000);
+}
+
+.gap-top-1100 {
+  margin-top: var(--fs-1100);
+}
+
+.gap-top-1200 {
+  margin-top: var(--fs-1200);
+}
+
+.gap-right-300 {
+  margin-right: var(--fs-300);
+}
+
+.gap-right-400 {
+  margin-right: var(--fs-400);
+}
+
+.gap-right-500 {
+  margin-right: var(--fs-500);
+}
+
+.gap-right-600 {
+  margin-right: var(--fs-600);
+}
+
+.gap-right-700 {
+  margin-right: var(--fs-700);
+}
+
+.gap-right-800 {
+  margin-right: var(--fs-800);
+}
+
+.gap-right-900 {
+  margin-right: var(--fs-900);
+}
+
+.gap-right-1000 {
+  margin-right: var(--fs-1000);
+}
+
+.gap-right-1100 {
+  margin-right: var(--fs-1100);
+}
+
+.gap-right-1200 {
+  margin-right: var(--fs-1200);
+}
+
+.gap-bottom-300 {
+  margin-bottom: var(--fs-300);
+}
+
+.gap-bottom-400 {
+  margin-bottom: var(--fs-400);
+}
+
+.gap-bottom-500 {
+  margin-bottom: var(--fs-500);
+}
+
+.gap-bottom-600 {
+  margin-bottom: var(--fs-600);
+}
+
+.gap-bottom-700 {
+  margin-bottom: var(--fs-700);
+}
+
+.gap-bottom-800 {
+  margin-bottom: var(--fs-800);
+}
+
+.gap-bottom-900 {
+  margin-bottom: var(--fs-900);
+}
+
+.gap-bottom-1000 {
+  margin-bottom: var(--fs-1000);
+}
+
+.gap-bottom-1100 {
+  margin-bottom: var(--fs-1100);
+}
+
+.gap-bottom-1200 {
+  margin-bottom: var(--fs-1200);
+}
+
+.gap-left-300 {
+  margin-left: var(--fs-300);
+}
+
+.gap-left-400 {
+  margin-left: var(--fs-400);
+}
+
+.gap-left-500 {
+  margin-left: var(--fs-500);
+}
+
+.gap-left-600 {
+  margin-left: var(--fs-600);
+}
+
+.gap-left-700 {
+  margin-left: var(--fs-700);
+}
+
+.gap-left-800 {
+  margin-left: var(--fs-800);
+}
+
+.gap-left-900 {
+  margin-left: var(--fs-900);
+}
+
+.gap-left-1000 {
+  margin-left: var(--fs-1000);
+}
+
+.gap-left-1100 {
+  margin-left: var(--fs-1100);
+}
+
+.gap-left-1200 {
+  margin-left: var(--fs-1200);
+}
+
+.pad-top-300 {
+  padding-top: var(--fs-300);
+}
+
+.pad-top-400 {
+  padding-top: var(--fs-400);
+}
+
+.pad-top-500 {
+  padding-top: var(--fs-500);
+}
+
+.pad-top-600 {
+  padding-top: var(--fs-600);
+}
+
+.pad-top-700 {
+  padding-top: var(--fs-700);
+}
+
+.pad-top-800 {
+  padding-top: var(--fs-800);
+}
+
+.pad-top-900 {
+  padding-top: var(--fs-900);
+}
+
+.pad-top-1000 {
+  padding-top: var(--fs-1000);
+}
+
+.pad-top-1100 {
+  padding-top: var(--fs-1100);
+}
+
+.pad-top-1200 {
+  padding-top: var(--fs-1200);
+}
+
+.pad-right-300 {
+  padding-right: var(--fs-300);
+}
+
+.pad-right-400 {
+  padding-right: var(--fs-400);
+}
+
+.pad-right-500 {
+  padding-right: var(--fs-500);
+}
+
+.pad-right-600 {
+  padding-right: var(--fs-600);
+}
+
+.pad-right-700 {
+  padding-right: var(--fs-700);
+}
+
+.pad-right-800 {
+  padding-right: var(--fs-800);
+}
+
+.pad-right-900 {
+  padding-right: var(--fs-900);
+}
+
+.pad-right-1000 {
+  padding-right: var(--fs-1000);
+}
+
+.pad-right-1100 {
+  padding-right: var(--fs-1100);
+}
+
+.pad-right-1200 {
+  padding-right: var(--fs-1200);
+}
+
+.pad-bottom-300 {
+  padding-bottom: var(--fs-300);
+}
+
+.pad-bottom-400 {
+  padding-bottom: var(--fs-400);
+}
+
+.pad-bottom-500 {
+  padding-bottom: var(--fs-500);
+}
+
+.pad-bottom-600 {
+  padding-bottom: var(--fs-600);
+}
+
+.pad-bottom-700 {
+  padding-bottom: var(--fs-700);
+}
+
+.pad-bottom-800 {
+  padding-bottom: var(--fs-800);
+}
+
+.pad-bottom-900 {
+  padding-bottom: var(--fs-900);
+}
+
+.pad-bottom-1000 {
+  padding-bottom: var(--fs-1000);
+}
+
+.pad-bottom-1100 {
+  padding-bottom: var(--fs-1100);
+}
+
+.pad-bottom-1200 {
+  padding-bottom: var(--fs-1200);
+}
+
+.pad-left-300 {
+  padding-left: var(--fs-300);
+}
+
+.pad-left-400 {
+  padding-left: var(--fs-400);
+}
+
+.pad-left-500 {
+  padding-left: var(--fs-500);
+}
+
+.pad-left-600 {
+  padding-left: var(--fs-600);
+}
+
+.pad-left-700 {
+  padding-left: var(--fs-700);
+}
+
+.pad-left-800 {
+  padding-left: var(--fs-800);
+}
+
+.pad-left-900 {
+  padding-left: var(--fs-900);
+}
+
+.pad-left-1000 {
+  padding-left: var(--fs-1000);
+}
+
+.pad-left-1100 {
+  padding-left: var(--fs-1100);
+}
+
+.pad-left-1200 {
+  padding-left: var(--fs-1200);
+}
+
+.stack-300 {
+  z-index: 0;
+}
+
+.stack-400 {
+  z-index: 10;
+}
+
+.stack-500 {
+  z-index: 20;
+}
+
+.stack-600 {
+  z-index: 30;
+}
+
+.stack-700 {
+  z-index: 40;
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.fs-700 {
+  font-size: var(--fs-700);
+}
+
+.fs-800 {
+  font-size: var(--fs-800);
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+
+.fs-1000 {
+  font-size: var(--fs-1000);
+}
+
+.fs-1100 {
+  font-size: var(--fs-1100);
+}
+
+.fs-1200 {
+  font-size: var(--fs-1200);
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.width-half {
+  width: 50%;
+}
+
+.width-quarter {
+  width: 25%;
+}
+
+.width-third {
+  width: 33.3333333333%;
+}
+
+@media (min-width: 36em) {
+  .sm\:box-block {
+    display: block;
+  }
+
+  .sm\:box-flex {
+    display: flex;
+  }
+
+  .sm\:box-hide {
+    display: none;
+  }
+
+  .sm\:box-show {
+    display: inherit;
+  }
+
+  .sm\:fs-300 {
+    font-size: var(--fs-300);
+  }
+
+  .sm\:fs-400 {
+    font-size: var(--fs-400);
+  }
+
+  .sm\:fs-500 {
+    font-size: var(--fs-500);
+  }
+
+  .sm\:fs-600 {
+    font-size: var(--fs-600);
+  }
+
+  .sm\:fs-700 {
+    font-size: var(--fs-700);
+  }
+
+  .sm\:fs-800 {
+    font-size: var(--fs-800);
+  }
+
+  .sm\:fs-900 {
+    font-size: var(--fs-900);
+  }
+
+  .sm\:fs-1000 {
+    font-size: var(--fs-1000);
+  }
+
+  .sm\:fs-1100 {
+    font-size: var(--fs-1100);
+  }
+
+  .sm\:fs-1200 {
+    font-size: var(--fs-1200);
+  }
+
+  .sm\:width-full {
+    width: 100%;
+  }
+
+  .sm\:width-half {
+    width: 50%;
+  }
+
+  .sm\:width-quarter {
+    width: 25%;
+  }
+
+  .sm\:width-third {
+    width: 33.3333333333%;
+  }
+}
+@media (min-width: 48em) {
+  .md\:box-block {
+    display: block;
+  }
+
+  .md\:box-flex {
+    display: flex;
+  }
+
+  .md\:box-hide {
+    display: none;
+  }
+
+  .md\:box-show {
+    display: inherit;
+  }
+
+  .md\:fs-300 {
+    font-size: var(--fs-300);
+  }
+
+  .md\:fs-400 {
+    font-size: var(--fs-400);
+  }
+
+  .md\:fs-500 {
+    font-size: var(--fs-500);
+  }
+
+  .md\:fs-600 {
+    font-size: var(--fs-600);
+  }
+
+  .md\:fs-700 {
+    font-size: var(--fs-700);
+  }
+
+  .md\:fs-800 {
+    font-size: var(--fs-800);
+  }
+
+  .md\:fs-900 {
+    font-size: var(--fs-900);
+  }
+
+  .md\:fs-1000 {
+    font-size: var(--fs-1000);
+  }
+
+  .md\:fs-1100 {
+    font-size: var(--fs-1100);
+  }
+
+  .md\:fs-1200 {
+    font-size: var(--fs-1200);
+  }
+
+  .md\:width-full {
+    width: 100%;
+  }
+
+  .md\:width-half {
+    width: 50%;
+  }
+
+  .md\:width-quarter {
+    width: 25%;
+  }
+
+  .md\:width-third {
+    width: 33.3333333333%;
+  }
+}
+@media (min-width: 62em) {
+  .lg\:box-block {
+    display: block;
+  }
+
+  .lg\:box-flex {
+    display: flex;
+  }
+
+  .lg\:box-hide {
+    display: none;
+  }
+
+  .lg\:box-show {
+    display: inherit;
+  }
+
+  .lg\:fs-300 {
+    font-size: var(--fs-300);
+  }
+
+  .lg\:fs-400 {
+    font-size: var(--fs-400);
+  }
+
+  .lg\:fs-500 {
+    font-size: var(--fs-500);
+  }
+
+  .lg\:fs-600 {
+    font-size: var(--fs-600);
+  }
+
+  .lg\:fs-700 {
+    font-size: var(--fs-700);
+  }
+
+  .lg\:fs-800 {
+    font-size: var(--fs-800);
+  }
+
+  .lg\:fs-900 {
+    font-size: var(--fs-900);
+  }
+
+  .lg\:fs-1000 {
+    font-size: var(--fs-1000);
+  }
+
+  .lg\:fs-1100 {
+    font-size: var(--fs-1100);
+  }
+
+  .lg\:fs-1200 {
+    font-size: var(--fs-1200);
+  }
+
+  .lg\:width-full {
+    width: 100%;
+  }
+
+  .lg\:width-half {
+    width: 50%;
+  }
+
+  .lg\:width-quarter {
+    width: 25%;
+  }
+
+  .lg\:width-third {
+    width: 33.3333333333%;
+  }
+}
+/* GORKO: auto-generated utility classes end */
 body {
-  background-color: var(--bgZ0);
+  background-color: var(--color-z0);
 }

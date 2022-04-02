@@ -108,4 +108,18 @@
     ((var(--f-9-min) / 16) * 1rem) + (var(--f-9-max) - var(--f-9-min)) *
       var(--fluid-bp)
   );
+
+  --fs-100: var(--step--1);
+  --fs-200: var(--step--2);
+  --fs-300: var(--step--1);
+  --fs-400: var(--step-0);
+  --fs-500: var(--step-1);
+  --fs-600: var(--step-2);
+  --fs-700: var(--step-3);
+  --fs-800: var(--step-4);
+  --fs-9000: var(--step-5);
+  --fs-1000: var(--step-6);
+  --fs-1100: var(--step-7);
+  --fs-1200: var(--step-8);
+  --fs-1300: var(--step-9);
 }
