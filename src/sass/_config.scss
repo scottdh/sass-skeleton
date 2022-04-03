@@ -1,3 +1,9 @@
+/* 
+Andy Bell's Gorko: A tiny, Sass-powered design-token led utility class generator, with handy helpers, that helps you to power your front-ends with a single source of truth.
+
+https://github.com/hankchizljaw/gorko#utility-class-generator
+*/
+
 $gorko-base-size: var(--step-0);
 
 $gorko-size-scale: (
@@ -130,7 +136,7 @@ $gorko-config: (
       //   "tokens": (
       //     "color": $dark-colors,
       //   ),
-      // ),,,,
+      // ),,,,,
     ),
     "fs": $gorko-size-scale,
     "ff": (
