@@ -2,9 +2,11 @@
 @use "./fluid-type-scale";
 @use "./typography";
 
+/* Utilities */
+@use "./utilities/flow";
+
+/* Components */
+@use "./components/card";
+
 @import "./config";
 @import "../../node_modules/gorko/gorko.scss";
-
-body {
-  background-color: var(--color-z0);
-}

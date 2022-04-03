@@ -18,7 +18,7 @@ $gorko-size-scale: (
 /// You can also use them to power borders, fills or shadows, for example.
 ///
 
-$gorko-all-colors: (
+$color-palette: (
   "water100": hsl(200, 100%, 96%),
   "water200": hsl(200, 81%, 90%),
   "water300": hsl(200, 75%, 83%),
@@ -92,40 +92,48 @@ $gorko-all-colors: (
 );
 
 $light-colors: (
-  "primaryText": map-get($gorko-all-colors, "salt1100"),
-  "z0": map-get($gorko-all-colors, "salt300"),
+  "primaryText": map-get($color-palette, "salt1100"),
+  "z0": map-get($color-palette, "salt300"),
+  "z1": map-get($color-palette, "salt100"),
+  "primary": map-get($color-palette, "grape500"),
 );
 
 $dark-colors: (
-  "primaryText": map-get($gorko-all-colors, "salt100"),
-  "z0": map-get($gorko-all-colors, "salt1300"),
+  "primaryText": map-get($color-palette, "salt300"),
+  "z0": map-get($color-palette, "salt1100"),
+  "z1": map-get($color-palette, "salt1200"),
+  "primary": map-get($color-palette, "grape700"),
 );
 
-/// CORE CONFIG
-/// This powers everything from utility class generation to breakpoints
-/// to enabling/disabling pre-built components/utilities.
-///
+/*CORE CONFIG
+This powers everything from utility class generation to breakpoints to enabling/disabling pre-built components/utilities. 
+*/
 
 $gorko-config: (
   "css-vars": (
+    "color": $light-colors,
     "themes": (
       "default": (
         "tokens": (
           "color": $light-colors,
         ),
       ),
-      // "dark": (
-      //   "prefers-color-scheme": "dark",
-      //   "tokens": (
-      //     "color": $dark-colors,
-      //   ),
-      // ),
-      // "dark-toggle": (
-      //   "prefix": '[data-theme="dark"]',
-      //   "tokens": (
-      //     "color": $dark-colors,
-      //   ),
-      // ),,
+      "dark": (
+        "prefers-color-scheme": "dark",
+        "tokens": (
+          "color": $dark-colors,
+        ),
+      ),
+      "dark-toggle": (
+        "prefix": '[data-theme="dark"]',
+        "tokens": (
+          "color": $dark-colors,
+        ),
+      ),
+    ),
+    "ff": (
+      "sans": "Helvetica, Arial, sans-serif",
+      "serif": "'Lora', serif",
     ),
     "fw": (
       "regular": 500,
@@ -133,28 +141,20 @@ $gorko-config: (
     ),
   ),
   "bg": (
-    "items": $gorko-all-colors,
+    "items": "color",
+    "css-vars": true,
     "output": "standard",
     "property": "background",
   ),
   "color": (
-    "items": $gorko-all-colors,
+    "items": "color",
+    "css-vars": true,
     "output": "standard",
     "property": "color",
   ),
-  "box": (
+  "ff": (
     "items": (
-      "block": "block",
-      "flex": "flex",
-      "hide": "none",
-      "show": "inherit",
-    ),
-    "output": "responsive",
-    "property": "display",
-  ),
-  "font": (
-    "items": (
-      "base": "Helvetica, Arial, sans-serif",
+      "sans": "Helvetica, Arial, sans-serif",
     ),
     "output": "standard",
     "property": "font-family",
@@ -224,12 +224,20 @@ $gorko-config: (
     "output": "standard",
     "property": "font-weight",
   ),
+  "lh": (
+    "items": (
+      "tight": "1.1",
+      "regular": "1.5",
+    ),
+    "output": "standard",
+    "property": "line-height",
+  ),
   "width": (
     "items": (
       "full": "100%",
-      "half": percentage(1/2),
-      "quarter": percentage(1/4),
-      "third": percentage(1/3),
+      "half": percentage(calc(1 / 2)),
+      "quarter": percentage(calc(1 / 4)),
+      "third": percentage(calc(1 / 3)),
     ),
     "output": "responsive",
     "property": "width",
